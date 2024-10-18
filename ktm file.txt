@@ -1,0 +1,9 @@
+<html>
+<head>
+<title>ktm</title>
+</head>
+<body>
+<img src="C:\Users\LIVEWIRE\Pictures\150669_ KTM 390 DUKE MY 2017_Medium.jfif"title="ktm390">
+
+</body>
+</html>
