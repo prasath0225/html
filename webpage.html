@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+         .container {
+      display: grid;
+      grid-template-columns: 1fr ; /* Define three columns */
+      grid-template-rows: auto;    /* Define two rows */
+      grid-template-areas: 
+        "header"
+        "main"
+        "footer";          /* Define named grid areas */
+      
+     
+    }
+    header {
+      grid-area: header;   
+      height: 10vh;
+      background-color: antiquewhite;         
+    }
+  
+    main {
+      grid-area: main;  
+      height: 80vh;
+      background-color: burlywood;
+    }
+    footer {
+      grid-area: footer;  
+      height: 10vh;
+      background-color: antiquewhite;                /* Assign item to named grid area */
+    }
+    main{
+        display: grid;
+        grid-template-columns: 1fr ; /* Define three columns */
+      grid-template-rows: auto;    /* Define two rows */
+      grid-template-areas: 
+        "intro"
+        "icon";          
+
+    }
+    #intro{
+        display: grid;
+        grid-template-columns: auto auto;
+
+    }
+    #intro div{
+        background-color: red;
+        margin: 10px;
+    }
+    #icon{
+        display: grid;
+        grid-template-columns: auto auto auto auto auto auto;
+    }
+    #icon div{
+        background-color: green;
+        margin: 5px;
+ 
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header></header>
+        <footer></footer>
+        <main>
+            <section id="intro">
+                <div></div>
+                <div></div>
+            </section>
+            <section id="icon">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+            </section>
+          
+        </main>
+    </div>
+</body>
+</html>

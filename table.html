@@ -1,20 +1,69 @@
+<!DOCTYPE html>
 <html>
 <head>
-<title>table</title>
+<style>
+
+
+table {
+
+   border-collapse:collapse; 
+  width: 10%;
+
+ 
+} 
+
+ th, td {
+
+   padding: 10px;
+  text-align: center; 
+  border: 1px solid #4d4747;
+  
+} 
+/* tr:nth-of-type(3):hover 
+{
+  background-color: #8e8989;
+}  */
+ tr:nth-child(odd):hover{
+  background-color: rgb(0, 0, 0); 
+  color:white;
+  font-family:Arial, Helvetica, sans-serif;
+} 
+
+</style>
 </head>
 <body>
-<table border="1">
-<thead>
-<tr>
-<th>head1</th>
-<th>head2</th>
-</thead>
-<t body>
-<tr>
-<td>table 1</td>
-</tr>	
-<tr>
-<td>tadle2</td>
-</tr>
+
+<h2>The vertical-align Property</h2>
+
+<p>This property sets the vertical alignment (like top, bottom, or middle) of the content in th or td.</p>
+
+<table>
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>Savings</th>
+  </tr>
+  <tr>
+    <td>Peter</td>
+    <td>Griffin</td>
+    <td>$100</td>
+  </tr>
+  <tr>
+    <td>Lois</td>
+    <td>Griffin</td>
+    <td>$150</td>
+  </tr>
+  <tr>
+    <td>Joe</td>
+    <td>Swanson</td>
+    <td>$300</td>
+  </tr>
+  <tr>
+    <td>Cleveland</td>
+    <td>Brown</td>
+    <td>$250</td>
+  </tr>
+</table>
+
 </body>
 </html>

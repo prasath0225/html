@@ -1,0 +1,18 @@
+from tkinter import*
+from tkinter import ttk
+  
+name=Tk()
+text=Text(name,height=2,width=30)
+text.pack()
+
+var=IntVar()
+R1=Radiobutton(name,text="option1",variable=var,value=1)
+R1.pack(anchor=W)
+R2=Radiobutton(name,text="option2",variable=var,value=2)
+R2.pack(anchor=W)
+Combo=ttk.Combobox(name,value=["option1","option2","option3","option3","opiton4","option5"])
+Combo.pack()
+
+Checkbutton(name,text="new").pack()
+Checkbutton(name,text="new1").pack()
+name.mainloop()

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animation Example</title>
+    <style>
+        .box {
+    width: 100px;
+    height: 100px;
+    background-color: #3498db;
+    position: relative;
+    animation-iteration-count: infinite;
+    /* Full animation properties */
+    animation-name: lk;                  /* Specifies the name of the @keyframes animation */
+    animation-duration: 5s;                /* Sets how long one cycle of the animation takes */
+    animation-timing-function:ease-out; /* Defines the speed curve for the animation */
+    animation-delay: 10ms;                   /* Wait time before the animation starts (0s means no delay) */
+       /* Specifies how many times the animation will repeat */
+    /* animation-direction:alternate-reverse;  */         /* Defines whether the animation should reverse (normal means it plays forward) */
+    animation-fill-mode:forwards;            /* Determines what styles are applied before and after the animation */
+    animation-play-state:running;        /* Specifies whether the animation is running or paused */
+}
+
+/* Keyframes for the animation */
+@keyframes lk {
+    0% {
+        top:0;
+        left: 0;
+        background-color: red;
+    }
+    50% {
+        top:300px;
+        left: 300px;
+        background-color: green;
+        width: 500px;
+        height: 500px;
+    }
+    100% {
+        top:0;
+        left: 0;
+        background-color: blue;
+        width: 100px;
+        height: 100px;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <div class="box">yhh</div>
+</body>
+</html>
